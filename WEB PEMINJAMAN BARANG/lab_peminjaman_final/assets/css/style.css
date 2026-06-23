@@ -1,0 +1,111 @@
+/* ============================================================
+   Lab Peminjaman — Main Stylesheet
+   ============================================================ */
+:root {
+  --bs-primary: #0d6efd;
+}
+
+body {
+  background: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Stat Cards ── */
+.stat-card {
+  border-radius: 14px;
+  color: #fff;
+  padding: 22px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.12);
+}
+.stat-card .stat-icon { font-size: 2.6rem; opacity: .85; }
+.stat-card .stat-num  { font-size: 2.2rem; font-weight: 700; line-height: 1; }
+.stat-card .stat-label{ font-size: .82rem; opacity: .9; margin-top: 2px; }
+
+/* ── Cards ── */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.07);
+}
+.card-header {
+  background: #fff;
+  border-bottom: 1px solid #e9ecef;
+  border-radius: 12px 12px 0 0 !important;
+  font-weight: 600;
+  padding: 14px 20px;
+}
+
+/* ── Table ── */
+.table thead th {
+  background: #f8f9fa;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  font-weight: 700;
+  color: #6c757d;
+  border-bottom: 2px solid #dee2e6;
+}
+.table td { vertical-align: middle; font-size: .9rem; }
+
+/* ── Thumbnail ── */
+.thumb {
+  width: 60px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+/* ── Login Page ── */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1565c0 0%, #0d47a1 50%, #01579b 100%);
+}
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  border-radius: 18px;
+  padding: 44px 40px;
+  background: #fff;
+  box-shadow: 0 24px 80px rgba(0,0,0,.25);
+}
+.login-card .logo {
+  font-size: 3rem;
+  color: #0d6efd;
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ── Badge ── */
+.badge { font-size: .74rem; font-weight: 600; }
+
+/* ── Navbar brand ── */
+.navbar-brand { font-size: 1.1rem; letter-spacing: .3px; }
+
+/* ── Footer ── */
+footer {
+  margin-top: auto;
+  background: #fff !important;
+  border-top: 1px solid #e9ecef;
+}
+
+/* ── Sticky navbar shadow ── */
+.sticky-top.navbar { z-index: 1030; }
+
+/* ── Code tag ── */
+code { font-size: .82rem; }
+
+/* ── Responsive ── */
+@media (max-width: 767px) {
+  .stat-card { padding: 16px 14px; }
+  .stat-card .stat-num { font-size: 1.6rem; }
+  .login-card { padding: 30px 22px; margin: 16px; }
+}
